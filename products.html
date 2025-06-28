@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h1>🛒 Product Listing</h1>
+  <label>Category:</label>
+  <select id="filter" onchange="filterProducts()">
+    <option value="all">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="fashion">Fashion</option>
+  </select>
+  <label>Sort by:</label>
+  <select id="sort" onchange="sortProducts()">
+    <option value="price">Price</option>
+    <option value="rating">Rating</option>
+  </select>
+  <ul id="productList"></ul>
+  <script src="products.js"></script>
+</body>
+</html>
